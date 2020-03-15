@@ -1,0 +1,23 @@
+<section class="list-item detail">
+        <div>
+            <img src={{recipe.image}} alt='image'>
+        </div>
+        <div>
+            <h2>{{recipe.title}}</h2>
+            <p><b>Cuisine:</b> {{recipe.cuisine}}</p>
+            <p><b>Difficulty level:</b> {{recipe.level}}</p>
+            <p><b>Dish type:</b> {{recipe.dishType}}</p>
+            <p><b>Preparation time:</b> {{recipe.duration}}</p>
+            <p><b>Created by:</b> {{recipe.creator}}</p>
+            <p><b>Ingredients</b></p> 
+                <ul>
+                    {{#each recipe.ingredients}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+        </div>
+        <div class="delete-link">
+            <a href="/recipes/update/{{recipe._id}}">Update</a>
+            <a href="/recipes/delete/{{recipe._id}}">Delete</a>
+        </div>
+</section>

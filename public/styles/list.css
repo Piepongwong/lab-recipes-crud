@@ -1,0 +1,33 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.list-item {
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+}
+
+.list-item img {
+    width: 720px;
+    height: auto;
+}
+
+.delete-link {
+    text-align: right;
+}
+
+.delete-link a{
+    text-decoration: none;
+    margin: 0px 5px 5px;
+    background-color: brown;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
