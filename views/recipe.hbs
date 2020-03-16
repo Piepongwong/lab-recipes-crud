@@ -1,0 +1,14 @@
+<h1>{{recipeHbs.title}}</h1>
+<img src="{{recipeHbs.image}}" alt="">
+<p>This dish's level is {{recipeHbs.level}}. The cuisine is {{recipeHbs.cuisine}}. It's a {{recipeHbs.dishType}} type of dish. It will take {{recipeHbs.duration}} minutes to make. The creator of the dish is {{recipeHbs.creator}}.</p>
+
+<div class="delete-link">
+        <a href="/recipes/delete/{{recipeHbs._id}}">Delete</a>
+</div>
+<div class="update-link">
+        <a href="/recipes/update/{{recipeHbs._id}}">update</a>
+</div>
+
+<div class="new-recipe">
+        <a href="/recipes/create">Create new recipe</a>
+</div>
