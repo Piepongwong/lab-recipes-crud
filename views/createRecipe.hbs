@@ -1,0 +1,25 @@
+<h1>CREATE NEW RECIPE</h1>
+
+
+<form action="/createRecipe" method="POST">
+    <input type="text" name="title" placeholder="title">
+    <input type="text" name="cuisine" placeholder="cuisine">
+    <input type="text" name="creator" placeholder="creator">
+    <input type="text" name="duration" placeholder="duration">
+    <select name="level" size="3" multiple>
+            <option value="Easy Peasy">Easy Peasy</option>
+            <option value="Amateur Chef">Amateur Chef</option>
+            <option value="UltraPro Chef">UltraPro Chef</option>
+    </select>
+     <select name="dishType" size="7" multiple>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Dish">Dish</option>
+            <option value="Main_course">Main_course</option>
+            <option value="Snack">Snack</option>
+            <option value="Drink">Drink</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Other">Other</option>
+
+    </select>
+   <button type="submit">Create Recipe</button>
+</form>
