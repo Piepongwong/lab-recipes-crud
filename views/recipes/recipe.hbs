@@ -1,0 +1,6 @@
+<h1>{{recipe.title}}</h1>
+<img src="{{recipe.image}}" alt="">
+<h3>Level: {{recipe.level}}, Cuisine: {{recipe.cuisine}}</h3>
+<h3>Creator: {{recipe.creator}}, Duration: {{recipe.duration}} minutes</h3>
+<p>ingredients: {{recipe.ingredients}}</p>
+<button onclick="window.location.href = '/recipe/edit/{{recipe.id}}';">Edit</button> <button onclick="window.location.href = '/recipe/delete/{{recipe.id}}';">Delete</button>

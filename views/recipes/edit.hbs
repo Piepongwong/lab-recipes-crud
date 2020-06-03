@@ -1,0 +1,13 @@
+<h2>Edit the Recipe!</h2>
+<form action="/recipe/edit" method="POST">
+<input type="text" value="{{recipe.title}}" name="title">
+<input type="text" value="{{recipe.difficulty}}" name="level">
+<input type="text" value="{{recipe.ingredients}}" name="ingredients">
+<input type="text" value="{{recipe.cuisine}}" name="cuisine">
+<input type="text" value="{{recipe.dishType}}" name="dishType">
+<input type="text" value="{{recipe.image}}" name="image">
+<input type="text" value="{{recipe.duration}}" name="duration">
+<input type="text" value="{{recipe.creator}}" name="creator">
+<input type="hidden" value="{{recipe._id}}" name="_id">
+<input type="submit">
+</form>
